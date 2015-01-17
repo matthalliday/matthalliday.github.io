@@ -1,0 +1,35 @@
+<div class="sidebar" role="complementary">
+    <div class="sidebar-module bio clearfix" itemtype="http://schema.org/Person" itemscope>
+        <h2 class="sidebar-title">About</h2>
+        <p>
+            <img src="/assets/img/avatar-small.jpg" alt="Photo of Matt Halliday" itemprop="image">
+            <span itemprop="name">Matt Halliday</span> is a <span itemprop="jobTitle">Front-end developer</span> at <a href="http://barkingdogstudios.com" itemprop="worksFor">Barking Dog Studios</a> in Guelph, Ontario, Canada.
+        </p>
+
+        <ul class="social-collection">
+            {% for link in site.data.social %}
+                <li class="social-item {{ link.class }}">
+                    <a href="{{ link.url }}">{{ link.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div><!-- /.bio -->
+
+    <div class="sidebar-module asides">
+        <h2 class="sidebar-title">Recommended</h2>
+        <ul class="aside-collection">
+            {% for link in site.data.asides %}
+                <li class="aside-item">
+                    <a href="{{ link.url }}">{{ link.name }}</a>
+                </li>
+            {% endfor %}
+        </ul><!-- /.aside-collection -->
+    </div><!-- /.asides -->
+
+    <div class="sidebar-module subscribe">
+        <h2 class="sidebar-title">Subscribe</h2>
+        <ul class="feed-collection">
+            <li class="feed-item"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">All Entries</a></li>
+        </ul><!-- /.feed-collection -->
+    </div><!-- /.subscribe -->
+</div><!-- /.sidebar -->

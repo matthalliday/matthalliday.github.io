@@ -1,0 +1,23 @@
+- name: A List Apart
+  url: http://alistapart.com
+
+- name: Cognition by Happy Cog
+  url: http://cognition.happycog.com
+
+- name: Erskine Design
+  url: http://erskinedesign.com/blog
+
+- name: Inside Intercom
+  url: http://blog.intercom.io
+
+- name: Rands in Repose
+  url: http://randsinrepose.com
+
+- name: Signal vs. Noise
+  url: https://signalvnoise.com
+
+- name: Smashing Magazine
+  url: http://www.smashingmagazine.com
+
+- name: We Are Mammoth
+  url: http://wearemammoth.co

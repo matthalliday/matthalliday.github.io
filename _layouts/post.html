@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="main-content">
+    <article class="entry-container" role="main" itemtype="http://schema.org/BlogPosting" itemscope>
+        <time class="entry-date" datetime="{{ page.date | date: "%Y-%m-%d" }}" itemprop="datePublished">
+            {{ page.date | date: "%A, %B %-d, %Y" }}
+        </time>
+
+        <h1 class="entry-title" itemprop="headline">{{ page.title }}</h1>
+
+        <div class="entry-content" itemprop="articleBody">
+            {{ content }}
+        </div>
+    </article><!-- /.entry-container -->
+</div><!-- /.main-content -->
