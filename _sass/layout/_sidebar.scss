@@ -1,0 +1,130 @@
+.sidebar {
+  padding: 30px 16px;
+  background-color: #eee;
+  color: #5d5d5d;
+
+  @include breakpoint(large) {
+    float: right;
+    padding: 30px calc-pc(20px);
+    width: calc-pc(260px);
+
+    &:hover a {
+      text-decoration: none;
+      color: $primary;
+    }
+  }
+}
+
+.sidebar-title {
+  margin-top: 0;
+  font-weight: bold;
+  font-size: calc-em(12px);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.sidebar-module {
+  @include clearfix;
+  margin-bottom: 40px;
+
+  p {
+    margin: 2px 0 0;
+    font-size: calc-em(12px);
+    line-height: 1.5;
+  }
+
+  a {
+    text-decoration: none;
+    color: #222;
+    transition: color 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+.bio img {
+  float: left;
+  margin-top: 4px;
+  padding-right: 5.769230769231%;
+}
+
+.aside-collection {
+  margin-top: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.aside-item {
+  margin-bottom: 4px;
+
+  a {
+    font-weight: bold;
+    font-size: calc-em(12px);
+    line-height: 1.2;
+    color: #222;
+    text-shadow: 0 1px 0 #fff;
+  }
+
+  .summary {
+    display: block;
+    margin-top: 4px;
+    font-size: calc-em(12px);
+    line-height: 1.5;
+  }
+}
+
+.social-collection {
+  float: left;
+  margin: 5px 0 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.social-item {
+  float: left;
+  margin-right: 8px;
+  background-image: url(/assets/img/sprite-social.png);
+  background-repeat: no-repeat;
+
+  &.twitter { background-position: 0 0; }
+  &.github { background-position: -17px 0; }
+  &.linkedin { background-position: -34px 0; }
+
+  a {
+    display: block;
+    width: 17px;
+    height: 16px;
+    text-indent: -9999px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.feed-collection {
+  margin-top: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.feed-item {
+  margin-bottom: 8px;
+  padding-left: 24px;
+  background: url(/assets/img/icon-feed.png) no-repeat 0 2px;
+
+  a {
+    font-weight: bold;
+    font-size: calc-em(12px);
+    line-height: 1.2;
+    color: #222;
+    text-shadow: 0 1px 0 #fff;
+  }
+}
+
+.subscribe {
+  margin-bottom: 0;
+}

@@ -6,12 +6,11 @@
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 // -------------------------------------------------------------------------- //
-@import "mixins";    // Mixins and placeholders
-@import "config";    // Variables, mixins & functions
-@import "normalize"; // More consistent browser styling
-@import "helpers";   // Non-semantic helper classes
-@import "base";      // Base styles (spacing, typography & color)
-
-@media screen and (min-width: $large) {
-    @import "large"; // Two-column layout for larger viewports
-}
+@import "config/mixins";
+@import "config/functions";
+@import "config/environment";
+@import "config/normalize";
+@import "layout/base";
+@import "layout/structure";
+@import "layout/sidebar";
+@import "layout/entries";

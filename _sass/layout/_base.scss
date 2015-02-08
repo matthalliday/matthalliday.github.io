@@ -1,0 +1,35 @@
+// Global
+// -------------------------------------------------------------------------- //
+// Hide only visually, but have it available for screenreaders: h5bp.com/v
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+img,
+object {
+  max-width: 100%;
+}
+
+a:visited {
+  color: #222;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  font-size: 100%;
+  font-family: $body;
+
+  @include breakpoint(large) {
+    background-color: $primary;
+  }
+}
