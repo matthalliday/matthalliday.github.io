@@ -4,6 +4,8 @@
   color: #5d5d5d;
 
   @include breakpoint(large) {
+    position: relative;
+    z-index: 10; // Must be set higher than .site-container:before
     float: right;
     padding: 30px calc-pc(20px);
     width: calc-pc(260px);
@@ -48,7 +50,7 @@
 .bio img {
   float: left;
   margin-top: 4px;
-  padding-right: 5.769230769231%;
+  padding-right: calc-pc(14px, 260px);
 }
 
 .aside-collection {
@@ -86,12 +88,12 @@
 .social-item {
   float: left;
   margin-right: 8px;
-  background-image: url(/assets/img/sprite-social.png);
+  background-image: url(/assets/img/sprite.png);
   background-repeat: no-repeat;
 
-  &.twitter { background-position: 0 0; }
-  &.github { background-position: -17px 0; }
-  &.linkedin { background-position: -34px 0; }
+  &.twitter { background-position: -16px 0; }
+  &.github { background-position: -33px 0; }
+  &.linkedin { background-position: -50px 0; }
 
   a {
     display: block;
@@ -113,8 +115,6 @@
 
 .feed-item {
   margin-bottom: 8px;
-  padding-left: 24px;
-  background: url(/assets/img/icon-feed.png) no-repeat 0 2px;
 
   a {
     font-weight: bold;
@@ -122,6 +122,17 @@
     line-height: 1.2;
     color: #222;
     text-shadow: 0 1px 0 #fff;
+
+    &:before {
+      position: relative;
+      top: 2px;
+      display: inline-block;
+      margin-right: 8px;
+      width: 16px;
+      height: 16px;
+      content: '';
+      background: url(/assets/img/sprite.png) no-repeat 0 0;
+    }
   }
 }
 
