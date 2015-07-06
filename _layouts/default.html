@@ -12,10 +12,12 @@
         {% endif %}
     </title>
 
-    <meta name="author" content="Matt Halliday" />
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 150 }}{% else %}{{ site.description | strip_html }}{% endif %}" />
     <meta name="google-site-verification" content="lbSojRHy3gVct6QeMYiBTyE2cOgooTREgLQAGCnEsjw" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Matt Halliday" />
+    {% if page.excerpt %}
+        <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 150 }}" />
+    {% endif %}
 
     <link rel="stylesheet" href="{{ "/assets/css/style.css" | prepend: site.baseurl }}" />
     <link rel="alternate" type="application/rss+xml" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
@@ -23,18 +25,6 @@
 
     <meta property="og:site_name" content="{{ site.title }}" />
     <meta property="og:url" content="{{ site.baseurl }}" />
-
-    {% if page.title %}
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content="{{ page.title }}" />
-        <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 150 }}" />
-        <meta property="og:image" content="" />
-    {% else %}
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="{{ site.title }}" />
-        <meta property="og:description" content="{{ site.description | strip_html }}" />
-        <meta property="og:image" content="" />
-    {% endif %}
 </head>
 
 <body>
