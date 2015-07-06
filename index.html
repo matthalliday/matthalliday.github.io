@@ -3,17 +3,15 @@ layout: default
 ---
 
 <section class="main-content" role="main">
-    <h1 class="visuallyhidden">Recent Posts</h1>
-
     {% for post in site.posts %}
         <article class="entry-container" itemtype="http://schema.org/BlogPosting" itemscope>
             <time class="entry-date" datetime="{{ post.date | date: "%Y-%m-%d" }}" itemprop="datePublished">
                 {{ post.date | date: "%A, %B %-d, %Y" }}
             </time>
 
-            <h1 class="entry-title" itemprop="headline">
+            <h2 class="entry-title" itemprop="headline">
                 <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h1>
+            </h2>
 
             <div class="entry-content" itemprop="articleBody">
                 {{ post.content }}

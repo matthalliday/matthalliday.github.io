@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <title>
-        {% if page.title %}
-            {{ page.title }} | Entry | Matt Halliday
-        {% else %}
+        {% if page.url == "/index.html" %}
             Matt Halliday is a front-end developer
+        {% else %}
+            {{ page.title }} | Matt Halliday
         {% endif %}
     </title>
 
@@ -30,9 +30,15 @@
 <body>
     <div class="site-container">
         <header class="site-header" role="banner">
-            <h1 class="logo">
-                <a href="{{ site.baseurl }}/">{{ site.title }}</a>
-            </h1>
+            {% if page.url == "/index.html" %}
+                <h1 class="logo">
+                    <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+                </h1>
+            {% else %}
+                <div class="logo">
+                    <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+                </div>
+            {% endif %}
         </header>
 
         {{ content }}
