@@ -1,8 +1,17 @@
+- name: 24 Ways
+  url: https://24ways.org/
+
 - name: A List Apart
   url: http://alistapart.com
 
+- name: Codeship
+  url: http://blog.codeship.com/
+
 - name: Cognition by Happy Cog
   url: http://cognition.happycog.com
+
+- name: CSS Tricks
+  url: https://css-tricks.com/
 
 - name: Erskine Design
   url: http://erskinedesign.com/blog
