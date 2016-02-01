@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <title>
-        {% if page.url == "/index.html" %}
+        {% if page.type == "home" %}
             Matt Halliday is a front-end developer located in Guelph, Ontario
         {% else %}
             {{ page.title }} | Matt Halliday
@@ -27,7 +27,7 @@
 <body>
     <div class="site-container">
         <header class="site-header" role="banner">
-            {% if page.url == "/index.html" %}
+            {% if page.type == "home" %}
                 <h1 class="logo">
                     <a href="{{ site.baseurl }}/">{{ site.title }}</a>
                 </h1>
