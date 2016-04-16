@@ -2,8 +2,8 @@
 layout: default
 ---
 
-<div class="main-content">
-    <article class="entry-container" role="main" itemtype="http://schema.org/BlogPosting" itemscope>
+<main id="content" class="main-content" role="main" tabindex="-1">
+    <article class="entry-container" itemtype="http://schema.org/BlogPosting" itemscope>
         <time class="entry-date" datetime="{{ page.date | date: "%Y-%m-%d" }}" itemprop="datePublished">
             {{ page.date | date: "%A, %B %-d, %Y" }}
         </time>
@@ -14,4 +14,4 @@ layout: default
             {{ content }}
         </div>
     </article><!-- /.entry-container -->
-</div><!-- /.main-content -->
+</main><!-- /.main-content -->

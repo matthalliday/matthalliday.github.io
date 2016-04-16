@@ -23,10 +23,11 @@
     <link rel="alternate" type="application/rss+xml" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
 </head>
-
 <body>
     <div class="site-container">
         <header class="site-header" role="banner">
+            <a class="visuallyhidden focusable skipper" href="#content">Skip to content</a>
+
             {% if page.type == "home" %}
                 <h1 class="logo">
                     <a href="{{ site.baseurl }}/">{{ site.title }}</a>

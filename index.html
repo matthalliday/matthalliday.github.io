@@ -3,7 +3,7 @@ layout: default
 type: home
 ---
 
-<section class="main-content" role="main">
+<main id="content" class="main-content" role="main" tabindex="-1">
     {% for post in site.posts %}
         <article class="entry-container" itemtype="http://schema.org/BlogPosting" itemscope>
             <time class="entry-date" datetime="{{ post.date | date: "%Y-%m-%d" }}" itemprop="datePublished">
@@ -19,4 +19,4 @@ type: home
             </div>
         </article><!-- /.entry-container -->
     {% endfor %}
-</section><!-- /.main-content -->
+</main><!-- /.main-content -->
