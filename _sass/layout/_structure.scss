@@ -1,5 +1,5 @@
 .site-container {
-  @include clearfix;
+  overflow: hidden;
   background-color: #fff;
 
   @include breakpoint(large) {
@@ -37,16 +37,12 @@
 }
 
 .logo {
-  margin: 0 auto;
-  width: 161px;
-  height: 34px;
-
-  @include breakpoint(large) {
-    margin: 0;
-  }
+  margin-top: 0;
+  margin-bottom: 0;
 
   a {
     display: block;
+    width: 161px;
     height: 34px;
     text-indent: -9999px;
     overflow: hidden;

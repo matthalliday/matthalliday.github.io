@@ -1,13 +1,5 @@
-@mixin clearfix {
-  &:after {
-  clear: both;
-  content: '';
-  display: table;
-  }
-}
-
 @mixin breakpoint($point) {
   @if $point == large {
-  @media only screen and (min-width: 960px) { @content; }
+    @media only screen and (min-width: 960px) { @content; }
   }
 }

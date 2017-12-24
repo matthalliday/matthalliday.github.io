@@ -19,8 +19,8 @@
 }
 
 .sidebar-module {
-  @include clearfix;
   margin-bottom: 40px;
+  overflow: hidden;
 
   p {
     margin: 2px 0 0;
@@ -44,7 +44,7 @@
 .bio img {
   float: left;
   margin-top: 4px;
-  padding-right: calc-pc(14px, 260px);
+  padding-right: calc-pc(16px, 300px);
 }
 
 .link-collection {
@@ -61,12 +61,5 @@
     font-size: calc-em(12px);
     line-height: 1.2;
     color: #222;
-  }
-
-  .summary {
-    display: block;
-    margin-top: 4px;
-    font-size: calc-em(12px);
-    line-height: 1.5;
   }
 }
