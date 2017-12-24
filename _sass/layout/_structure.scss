@@ -75,6 +75,10 @@
     padding: 26px calc-pc(40px) 0;
     width: calc-pc(620px);
   }
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .site-footer {
