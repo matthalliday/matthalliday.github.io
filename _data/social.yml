@@ -1,11 +1,8 @@
-- title: Follow me on Twitter
-  class: twitter
+- name: Twitter
   url: https://twitter.com/matthalliday
 
-- title: View my open-source projects on Github
-  class: github
+- name: Github
   url: https://github.com/matthalliday
 
-- title: Connect with me on LinkedIn
-  class: linkedin
+- name: LinkedIn
   url: http://ca.linkedin.com/in/matthalliday

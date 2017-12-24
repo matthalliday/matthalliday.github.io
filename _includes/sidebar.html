@@ -5,21 +5,24 @@
             <img src="/assets/img/avatar-small.jpg" alt="Photo of Matt Halliday" itemprop="image">
             <span itemprop="name">Matt Halliday</span> is a <span itemprop="jobTitle">Front End Developer</span> at <a href="https://shopify.com/plus" itemprop="worksFor">Shopify Plus</a> in Waterloo, Ontario, Canada.
         </p>
-
-        <ul class="social-collection">
-            {% for link in site.data.social %}
-                <li class="social-item {{ link.class }}">
-                    <a href="{{ link.url }}">{{ link.title }}</a>
-                </li>
-            {% endfor %}
-        </ul>
     </div><!-- /.bio -->
+
+    <div class="sidebar-module social">
+      <h3 class="sidebar-title">Social</h3>
+      <ul class="link-collection">
+          {% for link in site.data.social %}
+              <li class="link-collection__item">
+                  <a href="{{ link.url }}">{{ link.name }}</a>
+              </li>
+          {% endfor %}
+      </ul>
+    </div>
 
     <div class="sidebar-module asides">
         <h3 class="sidebar-title">Recommended</h3>
-        <ul class="aside-collection">
+        <ul class="link-collection">
             {% for link in site.data.asides %}
-                <li class="aside-item">
+                <li class="link-collection__item">
                     <a href="{{ link.url }}">{{ link.name }}</a>
                 </li>
             {% endfor %}
@@ -28,8 +31,10 @@
 
     <div class="sidebar-module subscribe">
         <h3 class="sidebar-title">Subscribe</h3>
-        <ul class="feed-collection">
-            <li class="feed-item"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">All Entries</a></li>
+        <ul class="link-collection">
+            <li class="link-collection__item">
+              <a href="{{ "/feed.xml" | prepend: site.baseurl }}">Articles RSS</a>
+            </li>
         </ul><!-- /.feed-collection -->
     </div><!-- /.subscribe -->
 </div><!-- /.sidebar -->
