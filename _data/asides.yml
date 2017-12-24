@@ -13,20 +13,17 @@
 - name: CSS Tricks
   url: https://css-tricks.com/
 
-- name: Erskine Design
-  url: http://erskinedesign.com/blog
+- name: CSS Wizardry
+  url: https://csswizardry.com/
+
+- name: Filament Group
+  url: https://www.filamentgroup.com/lab/
 
 - name: Inside Intercom
   url: http://blog.intercom.io
 
-- name: Rands in Repose
-  url: http://randsinrepose.com
-
-- name: Signal vs. Noise
+- name: Signal v. Noise
   url: https://signalvnoise.com
 
 - name: Smashing Magazine
   url: http://www.smashingmagazine.com
-
-- name: We Are Mammoth
-  url: http://wearemammoth.co
