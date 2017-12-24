@@ -1,10 +1,14 @@
 .entry-container {
-  padding: 25px 0 20px;
+  padding: 40px 0;
   border-top: 1px solid #ddd;
 
   &:first-of-type {
     padding-top: 0;
     border: none;
+  }
+
+  &:last-of-type {
+    padding-bottom: 0;
   }
 }
 
@@ -14,7 +18,7 @@
 }
 
 .entry-title {
-  margin: 5px 0 10px;
+  margin: 8px 0 24px;
   font: normal calc-em(22px) $heading;
 
   a {
@@ -55,17 +59,18 @@
 
 .entry-content {
   h2 {
-    margin: 10px 0 10px;
+    margin: 32px 0 16px;
     font-size: calc-em(14px);
   }
 
   h3 {
-    margin: 10px 0 4px;
+    margin: 16px 0 4px;
     font-size: calc-em(12px);
   }
 
   p {
     margin-top: 0;
+    margin-bottom: 16px;
     font-size: calc-em(12px);
     line-height: 1.6;
     color: #6d6d6d;
@@ -100,14 +105,6 @@
     }
   }
 
-  iframe,
-  video,
-  embed,
-  object {
-    margin-bottom: 20px;
-    max-width: 100%;
-  }
-
   pre {
     padding: 6px 12px;
     text-align: left;
@@ -116,6 +113,11 @@
     background-color: #f6f6f6;
     border: 1px solid #eaeaea;
     color: #333;
+  }
+
+  // Always remove bottom margin from child last element
+  > :last-child {
+    margin-bottom: 0;
   }
 }
 

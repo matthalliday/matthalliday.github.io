@@ -4,11 +4,9 @@
   color: #5d5d5d;
 
   @include breakpoint(large) {
-    position: relative;
-    z-index: 10; // Must be set higher than .site-container:before
     float: right;
-    padding: 30px calc-pc(20px);
-    width: calc-pc(260px);
+    padding: 40px;
+    width: calc-pc(300px);
   }
 }
 

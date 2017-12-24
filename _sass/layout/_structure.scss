@@ -4,32 +4,21 @@
 
   @include breakpoint(large) {
     position: relative; // Contains absolute positioned elements
-    margin: 40px auto 60px;
+    margin: 60px auto;
     width: 85%;
+    max-width: 1280px;
+    background-color: #eee;
     box-shadow: 0 1px 6px rgba(0,0,0,0.40);
-
-    &:before {
-      position: absolute;
-      z-index: 1; // Must be set lower than .sidebar
-      top: 0;
-      right: 0;
-      bottom: 0;
-      width: calc-pc(300px);
-      background-color: #eee;
-      content: '';
-    }
   }
 }
 
 .site-header {
-  position: relative;
-  z-index: 10; // Must be set higher than .sidebar
   padding: 20px 16px 16px;
   background-color: #000;
 
   @include breakpoint(large) {
-    padding-right: calc-pc(40px);
-    padding-left: calc-pc(40px);
+    padding-right: 60px;
+    padding-left: 60px;
   }
 }
 
@@ -72,8 +61,8 @@
 
   @include breakpoint(large) {
     float: left;
-    padding: 26px calc-pc(40px) 0;
-    width: calc-pc(620px);
+    padding: 40px 60px;
+    width: calc-pc(700px);
   }
 
   &:focus {
@@ -90,7 +79,7 @@
     position: absolute;
     top: 100%;
     right: 0;
-    padding: 8px calc-em(20px) 0 0;
+    padding-right: 0;
   }
 }
 
