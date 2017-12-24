@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <link rel="dns-prefetch preconnect" href="//www.google-analytics.com" />
+
     <title>
         {% if page.type == "home" %}
             Matt Halliday is a Front End Developer at Shopify Plus in Waterloo, Ontario, Canada
@@ -13,6 +15,10 @@
         {% endif %}
     </title>
 
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | prepend: site.baseurl }}" />
+    <link rel="alternate" type="application/rss+xml" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+
     <meta name="google-site-verification" content="lbSojRHy3gVct6QeMYiBTyE2cOgooTREgLQAGCnEsjw" />
     <meta name="author" content="Matt Halliday" />
     {% if page.type == "home" %}
@@ -20,10 +26,6 @@
     {% elsif page.excerpt %}
         <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 150 }}" />
     {% endif %}
-
-    <link rel="stylesheet" href="{{ "/assets/css/style.css" | prepend: site.baseurl }}" />
-    <link rel="alternate" type="application/rss+xml" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
 </head>
 <body>
     <div class="site-container">
