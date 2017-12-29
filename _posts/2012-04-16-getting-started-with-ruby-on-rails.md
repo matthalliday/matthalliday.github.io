@@ -1,9 +1,6 @@
 ---
-layout: post
 title: "Getting started with Ruby on Rails"
-date: 2012-04-16 12:00:00
-permalink: /entry/getting-started-with-ruby-on-rails
-author: Matt Halliday
+date: 2012-04-16
 ---
 
 Over the past few months I've been teaching myself Ruby on Rails. I'm very happy with the progress I've made and thought it would be helpful if I shared a bit of my learning process with others.

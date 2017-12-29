@@ -13,3 +13,14 @@ sass:
   style: :compressed
 plugins:
   - jekyll-sitemap
+
+# Front-matter defaults
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: /entry/:title
+      author: Matt Halliday

@@ -1,9 +1,6 @@
 ---
-layout: post
 title: "Designers should know just enough code"
-date: 2013-08-05 12:00:00
-permalink: /entry/designers-should-know-just-enough-code
-author: Matt Halliday
+date: 2013-08-05
 ---
 
 A List Apart recently [linked to an article][1] by Joshua Seiden titled, ["Designers shouldn’t code" is the wrong answer to the right question][2]. Joshua's article is actually a response to Wayne Greenwood's article, [Unicorn, Shmunicorn—Be a Pegasus][3].

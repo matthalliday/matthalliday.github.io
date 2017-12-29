@@ -1,9 +1,6 @@
 ---
-layout: post
 title: "Hitting the ground running"
-date: 2011-09-07 12:00:00
-permalink: /entry/hitting-the-ground-running
-author: Matt Halliday
+date: 2011-09-07
 ---
 
 I've wanted to get this site back up and running for a few years now. It's taken this long because I honestly wasn't sure what the purpose of a new website would be, or if I even needed one at all.

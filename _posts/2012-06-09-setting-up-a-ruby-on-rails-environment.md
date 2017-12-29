@@ -1,9 +1,6 @@
 ---
-layout: post
 title: "Setting up a Ruby on Rails environment"
-date: 2012-06-09 12:00:00
-permalink: /entry/setting-up-a-ruby-on-rails-environment
-author: Matt Halliday
+date: 2012-06-09
 ---
 
 Ruby on Rails is a great framework with lots to offer, but to those unfamiliar with either Ruby or Rails, it can be a bit intimidating to get a development environment set up.
