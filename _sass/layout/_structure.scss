@@ -1,5 +1,4 @@
 .site-container {
-  overflow: hidden;
   background-color: #fff;
 
   @include breakpoint(large) {
@@ -9,6 +8,12 @@
     max-width: 1280px;
     background-color: #eee;
     box-shadow: 0 1px 6px rgba(0,0,0,0.40);
+  }
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }
 
@@ -68,14 +73,14 @@
 
 .site-footer {
   padding: 12px 16px;
-  text-align: center;
   background-color: $primary;
 
   @include breakpoint(large) {
     position: absolute;
     top: 100%;
     right: 0;
-    padding-right: 0;
+    left: 0;
+    background-color: transparent;
   }
 }
 
@@ -83,10 +88,14 @@
   margin: 0;
   font-size: calc-em(11px);
   color: #2d0000;
-  text-shadow: 0 1px 0 #b50000;
 
   a {
     text-decoration: none;
-    color: #1c0000 !important;
+    color: inherit;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
   }
 }
