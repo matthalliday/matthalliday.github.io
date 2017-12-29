@@ -11,7 +11,7 @@ type: home
             </time>
 
             <h2 class="entry-title" itemprop="headline">
-                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
             </h2>
 
             <div class="entry-content" itemprop="articleBody">
