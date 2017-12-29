@@ -1,8 +1,9 @@
 # Site settings
-title: Matt Halliday
+title: Welcome to the personal website of Matt Halliday
 email: hello@matthalliday.ca
 description: > # this means to ignore newlines until "baseurl:"
-   Matt Halliday is a Front End Developer at Shopify Plus in Waterloo, Ontario, Canada.
+  Matt Halliday is a Front End Developer at Shopify Plus in Waterloo, Ontario, Canada.
+  His focus is on creating usable, accessible, and performant websites.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://matthalliday.ca" # the base hostname & protocol for your site
 
