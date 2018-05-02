@@ -91,6 +91,6 @@ Our shiny new Ruby on Rails development environment should now be set up, proper
 
 By choosing the rbenv/ruby-build configuration, we've made it pretty easy for ourselves to stay up-to-date with the latest version of Ruby. We also now have the ability to support legacy Rails apps that may require older versions of Ruby (like 1.8).
 
-If you're wondering what to do next, you may want to read my previous article on [Getting started with Ruby on Rails](http://matthalliday.ca/entry/getting-started-with-ruby-on-rails).
+If you're wondering what to do next, you may want to read my previous article on [Getting started with Ruby on Rails](http://www.matthalliday.ca/entry/getting-started-with-ruby-on-rails).
 
 Also, if you've run into any into problems during the installation process, I'll try my best to answer any questions you may have [on Twitter](http://twitter.com/matthalliday).
