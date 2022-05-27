@@ -1,40 +1,34 @@
-<div class="sidebar" role="complementary">
-    <div class="sidebar-module bio" itemtype="http://schema.org/Person" itemscope>
-        <h3 class="sidebar-title">About</h3>
-        <p>
-            <img src="/assets/img/avatar.jpg" width="80" alt="Photo of Matt Halliday" itemprop="image">
-            <span itemprop="name">Matt Halliday</span> is a <span itemprop="jobTitle">Front End Developer</span> at <a href="https://shopify.com/plus" itemprop="worksFor">Shopify Plus</a> in Waterloo, Ontario, Canada.
-        </p>
-    </div><!-- /.bio -->
+<div>
+  <div>
+    <h3>About</h3>
+    <p>
+      <img src="/assets/img/avatar.jpg" width="80" alt="Photo of Matt Halliday">
+      Matt Halliday is a Front End Developer at <a href="https://www.shopify.com">Shopify</a> in Waterloo, Ontario, Canada.
+    </p>
+  </div>
 
-    <div class="sidebar-module social">
-      <h3 class="sidebar-title">Social</h3>
-      <ul class="link-collection">
-          {% for link in site.data.social %}
-              <li class="link-collection__item">
-                  <a href="{{ link.url }}">{{ link.name }}</a>
-              </li>
-          {% endfor %}
-      </ul>
-    </div>
+  <div>
+    <h3>Social</h3>
+    <ul>
+      {% for link in site.data.social %}
+        <li><a href="{{ link.url }}">{{ link.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
 
-    <div class="sidebar-module asides">
-        <h3 class="sidebar-title">Recommended</h3>
-        <ul class="link-collection">
-            {% for link in site.data.asides %}
-                <li class="link-collection__item">
-                    <a href="{{ link.url }}">{{ link.name }}</a>
-                </li>
-            {% endfor %}
-        </ul><!-- /.aside-collection -->
-    </div><!-- /.asides -->
+  <div>
+    <h3>Recommended</h3>
+    <ul>
+      {% for link in site.data.asides %}
+        <li><a href="{{ link.url }}">{{ link.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
 
-    <div class="sidebar-module subscribe">
-        <h3 class="sidebar-title">Subscribe</h3>
-        <ul class="link-collection">
-            <li class="link-collection__item">
-              <a href="{{ "/feed.xml" | absolute_url }}">Articles RSS</a>
-            </li>
-        </ul><!-- /.feed-collection -->
-    </div><!-- /.subscribe -->
-</div><!-- /.sidebar -->
+  <div>
+    <h3>Subscribe</h3>
+    <ul>
+      <li><a href="{{ "/feed.xml" | absolute_url }}">Articles RSS</a></li>
+    </ul>
+  </div>
+</div>

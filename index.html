@@ -3,20 +3,11 @@ layout: default
 type: home
 ---
 
-<main id="content" class="main-content" role="main" tabindex="-1">
-    {% for post in site.posts %}
-        <article class="entry-container" itemtype="http://schema.org/BlogPosting" itemscope>
-            <time class="entry-date" datetime="{{ post.date | date: "%Y-%m-%d" }}" itemprop="datePublished">
-                {{ post.date | date: "%A, %B %-d, %Y" }}
-            </time>
-
-            <h2 class="entry-title" itemprop="headline">
-                <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
-            </h2>
-
-            <div class="entry-content" itemprop="articleBody">
-                {{ post.content }}
-            </div>
-        </article><!-- /.entry-container -->
-    {% endfor %}
-</main><!-- /.main-content -->
+<main id="content" tabindex="-1">
+  {% for post in site.posts %}
+    <article>
+      <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %Y" }}</time>
+      <h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+    </article>
+  {% endfor %}
+</main>

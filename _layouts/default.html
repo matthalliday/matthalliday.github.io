@@ -1,36 +1,29 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {% include head/site-verification.html %}
-    {% include head/critical-path.html %}
-    {% include head/seo-social.html %}
+  {% include head/critical-path.html %}
+  {% include head/seo-social.html %}
 </head>
 <body>
-    <div class="site-container">
-        <header class="site-header" role="banner">
-            <a class="visuallyhidden focusable skipper" href="#content">Skip to content</a>
+  <header>
+    <a href="#content">Skip to content</a>
 
-            {% if page.type == "home" %}
-                <h1 class="logo">
-                    <a href="{{ site.baseurl }}/">{{ site.title }}</a>
-                </h1>
-            {% else %}
-                <div class="logo">
-                    <a href="{{ site.baseurl }}/">{{ site.title }}</a>
-                </div>
-            {% endif %}
-        </header>
+    {% if page.type == "home" %}
+      <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+    {% else %}
+      <div><a href="{{ site.baseurl }}/">{{ site.title }}</a></div>
+    {% endif %}
+  </header>
 
-        {{ content }}
+  {{ content }}
 
-        {% include sidebar.html %}
+  {% include sidebar.html %}
 
-        <footer class="site-footer" role="contentinfo">
-            <p class="powered-by">&copy; {{ site.time | date: "%Y" }} Matt Halliday. Powered by <a href="http://jekyllrb.com/">Jekyll</a>, <a href="https://github.com/">Github</a>, and lots of coffee.</p>
-        </footer>
-    </div><!-- /.site-container -->
+  <footer>
+    <p>&copy; {{ site.time | date: "%Y" }} Matt Halliday. Powered by <a href="http://jekyllrb.com/">Jekyll</a>, <a href="https://github.com/">Github</a>, and lots of coffee.</p>
+  </footer>
 </body>
 </html>
